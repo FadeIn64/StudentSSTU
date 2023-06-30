@@ -17,8 +17,10 @@ public class AudioScript : MonoBehaviour
     }
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Computer")
+        if (collision.gameObject.CompareTag("Computer"))
+        {
             AudioSource.Play();
-        print("Collision detected");
+            print("Collision detected");
+        }
     }
 }
