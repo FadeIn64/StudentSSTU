@@ -238,9 +238,13 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 113238093244881680, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
-      propertyPath: m_TagString
-      value: Wrench
+      propertyPath: m_Name
+      value: Wrench (Grab)
       objectReference: {fileID: 0}
+    - target: {fileID: 3225368927233267010, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 5312449895262018408}
     - target: {fileID: 4629913523865484305, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -293,6 +297,14 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 5312449895262018408}
+    - target: {fileID: 8518958723664441428, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
+      propertyPath: m_Name
+      value: Hammer (Grab)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9118855951512612579, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
+      propertyPath: m_Name
+      value: Duck (Grab)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -541,15 +553,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 581478244004642472}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0.125, z: 2.93}
+  m_LocalRotation: {x: -0, y: -0.4246939, z: -0, w: -0.90533704}
+  m_LocalPosition: {x: -3.3800478, y: 0.125, z: -1.6599926}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2289717519480568790}
   m_Father: {fileID: 6610940993610729713}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 410.263, z: 0}
 --- !u!114 &1125158181544132393
 MonoBehaviour:
   m_ObjectHideFlags: 0
