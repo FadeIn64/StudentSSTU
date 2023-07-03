@@ -8,6 +8,9 @@ public class AudioScript : MonoBehaviour
     [SerializeField]
     private AudioSource AudioSource;
 
+    [SerializeField]
+    private string tag;
+
     void Start()
     {
         
@@ -17,7 +20,7 @@ public class AudioScript : MonoBehaviour
     }
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Computer"))
+        if (collision.gameObject.CompareTag(tag))
         {
             AudioSource.Play();
             print("Collision detected");
