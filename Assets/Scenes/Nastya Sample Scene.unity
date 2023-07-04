@@ -3345,6 +3345,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1635420952100969125, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: c5cdc578c13e6754388673374c9e52df, type: 3}
     - target: {fileID: 1957376291008995600, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
       propertyPath: m_InteractionManager
       value: 
@@ -3425,6 +3429,10 @@ PrefabInstance:
       propertyPath: AudioSource
       value: 
       objectReference: {fileID: 694912485}
+    - target: {fileID: 5324375856852191188, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: bbe943b9ca7a0e343ba2b0995dd91e12, type: 3}
     - target: {fileID: 5473404710393463214, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
       propertyPath: m_Name
       value: PrefabInpit2
