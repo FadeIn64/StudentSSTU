@@ -8,7 +8,9 @@ TagManager:
   - Cell
   - Hammer
   - Wrench
-  - Floor
+  - Laptop
+  - Lastik
+  - Pen
   layers:
   - Default
   - TransparentFX
