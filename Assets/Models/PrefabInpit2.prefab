@@ -17055,7 +17055,7 @@ Transform:
   - {fileID: 1840382389171845545}
   - {fileID: 8271464484097515341}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5475360849654917722
 GameObject:
@@ -19894,9 +19894,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5891961873903770544}
+  - component: {fileID: 6533016782058355529}
+  - component: {fileID: 2952151966791038679}
   m_Layer: 0
   m_Name: Floor
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19920,6 +19922,39 @@ Transform:
   m_Father: {fileID: 4629913523865484305}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &6533016782058355529
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6107473345037766289}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 8.358776, y: 0.1639244, z: 8.0527525}
+  m_Center: {x: 0.24866402, y: -0.47733125, z: 0.6035929}
+--- !u!114 &2952151966791038679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6107473345037766289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d056ccfe8be0c0f4b9a8d38e320dcf17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6114466005800294475
 GameObject:
   m_ObjectHideFlags: 0
