@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class AudioScript : MonoBehaviour
 {
@@ -9,19 +10,12 @@ public class AudioScript : MonoBehaviour
     [SerializeField]
     private AudioSource AudioSource;
 
-    [SerializeField]
-    private string tag;
+    [FormerlySerializedAs("tag")] [SerializeField]
+    private string handleTag;
 
-    void Start()
-    {
-        
-    }
-    void Update()
-    {
-    }
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag(tag))
+        if (collision.gameObject.CompareTag(handleTag))
         {
             AudioSource.Play();
             print("Collision detected");
@@ -30,9 +24,9 @@ public class AudioScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag(tag))
+        if (other.gameObject.CompareTag(handleTag))
         {
-            AudioSource.Play();
+           AudioSource.Play();
             print("Collision detected");
         }
     }

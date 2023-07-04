@@ -18,6 +18,7 @@ public class FloorManager : MonoBehaviour
     public void CheckCollisionObject(GameObject gameObject)
     {
         var xrGrabInteractable = gameObject.GetComponent<XRGrabInteractable>();
+        if(xrGrabInteractable is null) return;
         if (!_startTransforms.ContainsKey(xrGrabInteractable)) 
             Push(xrGrabInteractable);
 
