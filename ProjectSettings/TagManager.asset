@@ -8,6 +8,7 @@ TagManager:
   - Cell
   - Hammer
   - Wrench
+  - Floor
   layers:
   - Default
   - TransparentFX
