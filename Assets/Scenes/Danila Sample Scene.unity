@@ -123,6 +123,25 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &52757521 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 834082773932320491, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
+  m_PrefabInstance: {fileID: 529708869}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &52757523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 52757521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44fdbdb1067b7a94db71ac060f8617ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AudioSource: {fileID: 613714765}
+  compareTag: Lastik
 --- !u!1 &137526510
 GameObject:
   m_ObjectHideFlags: 0
@@ -267,7 +286,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4629913523865484305, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.01
       objectReference: {fileID: 0}
     - target: {fileID: 4629913523865484305, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
       propertyPath: m_LocalRotation.w
@@ -317,11 +336,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Duck (Grab)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4630507742246003515, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 834082773932320491, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 52757523}
   m_SourcePrefab: {fileID: 100100000, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
+--- !u!82 &613714765 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5324375856852191188, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
+  m_PrefabInstance: {fileID: 529708869}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1852237206 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3285462695044385239, guid: 265ea9b0011f16343a05a6cd8f945610, type: 3}
