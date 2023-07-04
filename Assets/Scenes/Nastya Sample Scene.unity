@@ -6056,6 +6056,10 @@ PrefabInstance:
       value: Cell
       objectReference: {fileID: 0}
     - target: {fileID: 2065520295541136270, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
+      propertyPath: m_Name
+      value: Pen1Pt1 (Grab)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2065520295541136270, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
       propertyPath: m_TagString
       value: Pen
       objectReference: {fileID: 0}
