@@ -8,6 +8,8 @@ TagManager:
   - Cell
   - Hammer
   - Wrench
+  - Laptop
+  - Lastik
   layers:
   - Default
   - TransparentFX
