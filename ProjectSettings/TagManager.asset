@@ -11,6 +11,8 @@ TagManager:
   - Laptop
   - Lastik
   - Pen
+  - Floor
+  - Wall
   layers:
   - Default
   - TransparentFX
