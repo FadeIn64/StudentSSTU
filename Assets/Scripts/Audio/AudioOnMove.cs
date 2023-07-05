@@ -8,18 +8,19 @@ public class AudioOnMove : MonoBehaviour
 {
     public AudioSource AudioSource;
     public string compareTag;
-
-    private Transform attachTransform;
+    public float magnitudeTrigger;
+    
     private Rigidbody other;
 
-    //TODO: Передалать на Паузу
-   private void FixedUpdate()
+    private void FixedUpdate()
     {
         if(other is null) return;
-        print(other.velocity.magnitude);
-        if (other.velocity.magnitude < 0.015f) return;
-        AudioSource.Play();
-        attachTransform = other.gameObject.transform;
+        if (other.velocity.magnitude > magnitudeTrigger && !AudioSource.isPlaying)
+        {
+            AudioSource.UnPause();
+            return;
+        }
+        AudioSource.Pause();
     }
 
 
@@ -27,10 +28,12 @@ public class AudioOnMove : MonoBehaviour
     {
         if(!other.gameObject.CompareTag(compareTag)) return;
         this.other = other.rigidbody;
+        AudioSource.Play();
     }
 
     private void OnCollisionExit(Collision other)
     {
         this.other = null;
+        AudioSource.Stop();
     }
 }

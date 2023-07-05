@@ -142,6 +142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AudioSource: {fileID: 613714765}
   compareTag: Lastik
+  magnitudeTrigger: 5
 --- !u!1 &137526510
 GameObject:
   m_ObjectHideFlags: 0
@@ -316,6 +317,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5324375856852191188, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: c5cdc578c13e6754388673374c9e52df, type: 3}
     - target: {fileID: 5473404710393463214, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
       propertyPath: m_Name
       value: PrefabInpit2
@@ -328,6 +333,10 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 5312449895262018408}
+    - target: {fileID: 8473931647040224975, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
+      propertyPath: m_Name
+      value: Lastik Audio
+      objectReference: {fileID: 0}
     - target: {fileID: 8518958723664441428, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
       propertyPath: m_Name
       value: Hammer (Grab)
@@ -335,6 +344,10 @@ PrefabInstance:
     - target: {fileID: 9118855951512612579, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
       propertyPath: m_Name
       value: Duck (Grab)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9120794666502294280, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
+      propertyPath: m_Name
+      value: Marker Audio
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4630507742246003515, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
