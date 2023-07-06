@@ -442,6 +442,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7823892727557345951, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
+      propertyPath: m_PokeConfiguration.m_ConstantValue.m_InteractionDepthOffset
+      value: 0.045
+      objectReference: {fileID: 0}
     - target: {fileID: 8473931647040224975, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
       propertyPath: m_Name
       value: Lastik Audio
