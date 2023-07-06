@@ -7,8 +7,9 @@ using UnityEngine;
 public class CollisionTest : MonoBehaviour
 {
     // Start is called before the first frame update
-    
 
+    public Event Event;
+    
     private void OnCollisionEnter(Collision other)
     {
         print(other.gameObject.tag);
