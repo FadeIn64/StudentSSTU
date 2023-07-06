@@ -186,7 +186,7 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 8405180788075768770}
         m_TargetAssemblyTypeName: SelectAudioEvent, Assembly-CSharp
         m_MethodName: PlaySound
         m_Mode: 1
