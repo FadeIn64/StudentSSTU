@@ -17,4 +17,14 @@ public class TestScript : MonoBehaviour
     {
         
     }
+
+    public void Enter()
+    {
+        print("Enter");
+    }
+    
+    public void Exit()
+    {
+        print("Exit");
+    }
 }
