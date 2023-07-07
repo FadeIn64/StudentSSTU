@@ -2239,8 +2239,8 @@ GameObject:
   - component: {fileID: 3047204631306307243}
   - component: {fileID: 3023467550039030609}
   - component: {fileID: 1343881349416945792}
-  - component: {fileID: 4630507742246003515}
   - component: {fileID: 6449036758470883820}
+  - component: {fileID: 3884601000517392679}
   m_Layer: 0
   m_Name: Computer1Pt2
   m_TagString: Laptop
@@ -2337,20 +2337,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.13200006, y: 0.004000008, z: 0.091000035}
   m_Center: {x: -0.000000002292292, y: -0.000000017613173, z: 0.045500044}
---- !u!114 &4630507742246003515
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 834082773932320491}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4fb8c2796ab15df47b2943f5e324fc43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AudioSource: {fileID: 5324375856852191188}
-  tag: Lastik
 --- !u!114 &6449036758470883820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2364,7 +2350,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AudioSource: {fileID: 1635420952100969125}
-  tag: Pen
+  _tag: Pen
+--- !u!114 &3884601000517392679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834082773932320491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44fdbdb1067b7a94db71ac060f8617ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AudioSource: {fileID: 5324375856852191188}
+  compareTag: Lastik
+  magnitudeTrigger: 5
 --- !u!1 &836784894783418846
 GameObject:
   m_ObjectHideFlags: 0
@@ -8555,7 +8556,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 3.0249999, y: 1.28, z: 0.025000002}
   m_Center: {x: 7.107794e-18, y: 0.01000002, z: 0.012500014}
@@ -10833,7 +10834,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AudioSource: {fileID: 3754596905733545202}
-  tag: Computer
+  _tag: Computer
 --- !u!82 &3754596905733545202
 AudioSource:
   m_ObjectHideFlags: 0
@@ -16791,6 +16792,58 @@ Transform:
   m_Father: {fileID: 5058633900205266835}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5159441862061097096
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5905525580978839874}
+  - component: {fileID: 3862991450646099642}
+  m_Layer: 0
+  m_Name: TeleportPlacement
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5905525580978839874
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5159441862061097096}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.076, y: -0.213, z: 2.154}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7423815997876695634}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3862991450646099642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5159441862061097096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c867ad9b424b2364c88b78c7da45bd17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _teleportTransform: {fileID: 5905525580978839874}
+  _changeYPosition: 0
+  OnTeleportEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  FromTeleportEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &5189646031448526128
 GameObject:
   m_ObjectHideFlags: 0
@@ -18007,7 +18060,7 @@ Transform:
   - {fileID: 1840382389171845545}
   - {fileID: 8271464484097515341}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5475360849654917722
 GameObject:
@@ -20112,7 +20165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AudioSource: {fileID: 8936256943204003064}
-  tag: Hammer
+  _tag: Hammer
 --- !u!82 &8936256943204003064
 AudioSource:
   m_ObjectHideFlags: 0
@@ -27662,6 +27715,7 @@ Transform:
   - {fileID: 4376313393552178015}
   - {fileID: 557250407597756061}
   - {fileID: 4446275850529809536}
+  - {fileID: 5905525580978839874}
   m_Father: {fileID: 4629913523865484305}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -29029,7 +29083,7 @@ GameObject:
   - component: {fileID: 2824575872606664894}
   - component: {fileID: 5324375856852191188}
   m_Layer: 0
-  m_Name: Audio1
+  m_Name: Lastik Audio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29060,7 +29114,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: bbe943b9ca7a0e343ba2b0995dd91e12, type: 3}
+  m_audioClip: {fileID: 8300000, guid: c5cdc578c13e6754388673374c9e52df, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -29280,7 +29334,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -31163,7 +31217,7 @@ GameObject:
   - component: {fileID: 21775410980242084}
   - component: {fileID: 1635420952100969125}
   m_Layer: 0
-  m_Name: Audio2
+  m_Name: Marker Audio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

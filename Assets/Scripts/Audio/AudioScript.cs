@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class AudioScript : MonoBehaviour
 {
@@ -9,12 +10,12 @@ public class AudioScript : MonoBehaviour
     [SerializeField]
     private AudioSource AudioSource;
 
-    [SerializeField]
-    private string tag;
+    [FormerlySerializedAs("tag")] [SerializeField]
+    private string _tag;
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag(tag))
+        if (collision.gameObject.CompareTag(_tag))
         {
             AudioSource.Play();
             print("Collision detected");
