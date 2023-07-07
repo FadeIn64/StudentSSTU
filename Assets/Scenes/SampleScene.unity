@@ -275,8 +275,6 @@ GameObject:
   - component: {fileID: 864516760}
   - component: {fileID: 864516759}
   - component: {fileID: 864516758}
-  - component: {fileID: 864516763}
-  - component: {fileID: 864516762}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -372,40 +370,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &864516762
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 864516757}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a48886c4bbe19048bcac4ff6bc55554, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _teleportObject: {fileID: 0}
-  _startPlacement: {fileID: 0}
---- !u!114 &864516763
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 864516757}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c867ad9b424b2364c88b78c7da45bd17, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _teleportTransform: {fileID: 0}
-  _changeYPosition: 0
-  OnTeleportEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  FromTeleportEvent:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!4 &921099862 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 815288663949960751, guid: c4ca30c82d8e34c4c8f5fefcf8dec11e, type: 3}

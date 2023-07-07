@@ -44,7 +44,7 @@ namespace Teleport
         {
             var teleportVector = _teleportTransform.position;
             teleportVector.y = (_changeYPosition) ? teleportVector.y : teleportObject.transform.position.y;
-            teleportObject.transform.SetPositionAndRotation(teleportVector, _teleportTransform.rotation);
+            teleportObject.transform.SetPositionAndRotation(teleportVector, teleportObject.transform.rotation);
             if (OnTeleportEvent == null)
                 return;
             OnTeleportEvent.Invoke();
