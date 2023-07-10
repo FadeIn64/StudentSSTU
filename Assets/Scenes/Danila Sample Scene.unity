@@ -289,6 +289,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5590450755167599287, guid: 64464de3484b92c478c098bdf352cb15, type: 3}
+      propertyPath: m_PlayAudioClipOnHoverEntered
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6525934851561416872, guid: 64464de3484b92c478c098bdf352cb15, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.175
@@ -347,6 +351,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 68874334308364022, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
+      propertyPath: _teleportManager
+      value: 
+      objectReference: {fileID: 590718984}
     - target: {fileID: 598302851728608585, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
       propertyPath: _display
       value: 
@@ -363,10 +371,46 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1897193471215376596, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
+      propertyPath: _teleportManager
+      value: 
+      objectReference: {fileID: 590718984}
+    - target: {fileID: 1947814603025349804, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1957468083686924437, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
+      propertyPath: _teleportManager
+      value: 
+      objectReference: {fileID: 590718984}
+    - target: {fileID: 2012738475103743625, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
+      propertyPath: _teleportManager
+      value: 
+      objectReference: {fileID: 590718984}
+    - target: {fileID: 2567849109619258955, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2885049098454039279, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
+      propertyPath: _teleportManager
+      value: 
+      objectReference: {fileID: 590718984}
+    - target: {fileID: 2940073192857466099, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
+      propertyPath: _teleportManager
+      value: 
+      objectReference: {fileID: 590718984}
     - target: {fileID: 2952151966791038679, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
       propertyPath: FloorManager
       value: 
       objectReference: {fileID: 590718983}
+    - target: {fileID: 3004817176214604978, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
+      propertyPath: _teleportManager
+      value: 
+      objectReference: {fileID: 590718984}
+    - target: {fileID: 3680530458639039120, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
+      propertyPath: _teleportManager
+      value: 
+      objectReference: {fileID: 590718984}
     - target: {fileID: 3825313930265179236, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
       propertyPath: _oneButton
       value: 
@@ -375,6 +419,10 @@ PrefabInstance:
       propertyPath: _zeroButton
       value: 
       objectReference: {fileID: 1605040151}
+    - target: {fileID: 4035230694939196187, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4587798600938943807, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
       propertyPath: m_UseGravity
       value: 1
@@ -443,6 +491,10 @@ PrefabInstance:
       propertyPath: _teleportManager
       value: 
       objectReference: {fileID: 590718984}
+    - target: {fileID: 8052845734254001123, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8095715831097764327, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
       propertyPath: _teleportManager
       value: 
