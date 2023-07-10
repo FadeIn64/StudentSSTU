@@ -12,24 +12,24 @@ namespace Computer
         
         void Start()
         {
-            _beatles = new List<Beatle>(GetComponentsInChildren<Beatle>());
-            _random = new Random();
+            _beatles = new List<Beatle>(GetComponentsInChildren<Beatle>(true));
+            _random = new Random(3234242332);
         }
 
         private void FixedUpdate()
         {
             ++_framesCount;
-            if (_framesCount / 1000 == _random.NextInt(1,3))
+            if (_framesCount / 100 == _random.NextInt(1,3))
                 WakeUp();
         }
 
-        private void WakeUp()
+        public void WakeUp()
         {
             foreach (var beatle in _beatles)
                 beatle.WakeUp();
         }
 
-        private void Sleep()
+        public void Sleep()
         {
             foreach (var beatle in _beatles)
                 beatle.Sleep();

@@ -1041,6 +1041,7 @@ GameObject:
   - component: {fileID: 1829027140331092017}
   - component: {fileID: 2395634897030731787}
   - component: {fileID: 7541230027234046058}
+  - component: {fileID: 4181288836557959236}
   - component: {fileID: 1099303509733706106}
   - component: {fileID: 1767303963691178749}
   m_Layer: 0
@@ -1140,6 +1141,34 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.054693233, y: 0.050000023, z: 0.0618142}
   m_Center: {x: 0.000000010157962, y: 0.000000010651425, z: 0.025058996}
+--- !u!114 &4181288836557959236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3844472929447967092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 162a4f5d12745f64da10e80c4c13990c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 775799394870785138}
+        m_TargetAssemblyTypeName: Computer.BeatlesManager, Assembly-CSharp
+        m_MethodName: Sleep
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _collisionTag: Hammer
 --- !u!114 &1099303509733706106
 MonoBehaviour:
   m_ObjectHideFlags: 0
