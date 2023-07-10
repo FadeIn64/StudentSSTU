@@ -19,7 +19,7 @@ namespace Computer
         private void FixedUpdate()
         {
             ++_framesCount;
-            if (_framesCount / 100 == _random.NextInt(1,3))
+            if (_framesCount % 500 == _random.NextInt(1,3))
                 WakeUp();
         }
 
