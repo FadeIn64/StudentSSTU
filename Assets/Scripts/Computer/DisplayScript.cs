@@ -37,18 +37,19 @@ namespace Computer
         {
             if (_isWorking) OffPower();
             else OnPower();
-            _isWorking = !_isWorking;
         }
 
         internal void OnPower()
         {
             gameObject.SetActive(true);
+            _isWorking = true;
         }
 
         internal void OffPower()
         {
             _text.text = "";
             gameObject.SetActive(false);
+            _isWorking = false;
         }
     }
 }

@@ -1344,6 +1344,7 @@ GameObject:
   - component: {fileID: 9134700635360387017}
   - component: {fileID: 5765202034346271539}
   - component: {fileID: 1462298861915539592}
+  - component: {fileID: 8901624051632073376}
   m_Layer: 0
   m_Name: Beatle2
   m_TagString: Untagged
@@ -1424,6 +1425,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8901624051632073376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4502057541267811067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 439a75effbd722443a9989e203b1690b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4639780922370812252
 GameObject:
   m_ObjectHideFlags: 0
@@ -1683,6 +1696,7 @@ GameObject:
   - component: {fileID: 5686082875087187830}
   - component: {fileID: 5062717604500821673}
   - component: {fileID: 5094873521105792712}
+  - component: {fileID: 7999109657798456403}
   m_Layer: 0
   m_Name: Beatle1
   m_TagString: Untagged
@@ -1763,6 +1777,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7999109657798456403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5103274936932977387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 439a75effbd722443a9989e203b1690b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5273076867737443488
 GameObject:
   m_ObjectHideFlags: 0
@@ -1938,6 +1964,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8145787108750452088}
+  - component: {fileID: 775799394870785138}
   m_Layer: 0
   m_Name: Beatles
   m_TagString: Untagged
@@ -1962,6 +1989,18 @@ Transform:
   m_Father: {fileID: 1199644318976435463}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &775799394870785138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5556323427569813498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fb68b297dc3074419a279c379a0a29d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6320572479845633735
 GameObject:
   m_ObjectHideFlags: 0
