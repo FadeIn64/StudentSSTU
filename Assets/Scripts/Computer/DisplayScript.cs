@@ -35,14 +35,20 @@ namespace Computer
 
         internal void TogglePower()
         {
-            if (_isWorking)
-            {
-                _text.text = "";
-                gameObject.SetActive(false);
-            }
-            else
-                gameObject.SetActive(true);
+            if (_isWorking) OffPower();
+            else OnPower();
             _isWorking = !_isWorking;
+        }
+
+        internal void OnPower()
+        {
+            gameObject.SetActive(true);
+        }
+
+        internal void OffPower()
+        {
+            _text.text = "";
+            gameObject.SetActive(false);
         }
     }
 }
