@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.XR.Interaction.Toolkit;
@@ -12,12 +13,15 @@ namespace Computer
         private XRSimpleInteractable _oneButton;
         [SerializeField] 
         private Text _text;
+
+        private bool _isWorking;
         // Start is called before the first frame update
         void Start()
         {
             _text.text = "";
             _zeroButton.selectEntered.AddListener(ChangeTextPlusZero);
             _oneButton.selectEntered.AddListener(ChangeTextTPlusOne);
+            _isWorking = false;
         }
 
         private void ChangeTextPlusZero(SelectEnterEventArgs selectEnterEventArgs)
@@ -27,6 +31,18 @@ namespace Computer
         private void ChangeTextTPlusOne(SelectEnterEventArgs selectEnterEventArgs)
         {
             _text.text = "1" + _text.text;
+        }
+
+        internal void TogglePower()
+        {
+            if (_isWorking)
+            {
+                _text.text = "";
+                gameObject.SetActive(false);
+            }
+            else
+                gameObject.SetActive(true);
+            _isWorking = !_isWorking;
         }
     }
 }
