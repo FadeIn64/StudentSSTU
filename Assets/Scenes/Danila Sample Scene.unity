@@ -289,6 +289,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5590450755167599287, guid: 64464de3484b92c478c098bdf352cb15, type: 3}
+      propertyPath: m_PlayAudioClipOnHoverEntered
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6525934851561416872, guid: 64464de3484b92c478c098bdf352cb15, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.175
@@ -347,14 +351,42 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 68874334308364022, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
+      propertyPath: _teleportManager
+      value: 
+      objectReference: {fileID: 590718984}
+    - target: {fileID: 1897193471215376596, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
+      propertyPath: _teleportManager
+      value: 
+      objectReference: {fileID: 590718984}
+    - target: {fileID: 1957468083686924437, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
+      propertyPath: _teleportManager
+      value: 
+      objectReference: {fileID: 590718984}
+    - target: {fileID: 2012738475103743625, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
+      propertyPath: _teleportManager
+      value: 
+      objectReference: {fileID: 590718984}
+    - target: {fileID: 2885049098454039279, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
+      propertyPath: _teleportManager
+      value: 
+      objectReference: {fileID: 590718984}
+    - target: {fileID: 2940073192857466099, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
+      propertyPath: _teleportManager
+      value: 
+      objectReference: {fileID: 590718984}
     - target: {fileID: 2952151966791038679, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
       propertyPath: FloorManager
       value: 
       objectReference: {fileID: 590718983}
-    - target: {fileID: 4587798600938943807, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
-      propertyPath: m_IsKinematic
-      value: 1
-      objectReference: {fileID: 0}
+    - target: {fileID: 3004817176214604978, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
+      propertyPath: _teleportManager
+      value: 
+      objectReference: {fileID: 590718984}
+    - target: {fileID: 3680530458639039120, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
+      propertyPath: _teleportManager
+      value: 
+      objectReference: {fileID: 590718984}
     - target: {fileID: 4629913523865484305, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -399,30 +431,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5324375856852191188, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
-      propertyPath: m_audioClip
+    - target: {fileID: 4756976654528859100, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
+      propertyPath: _teleportManager
       value: 
-      objectReference: {fileID: 8300000, guid: c5cdc578c13e6754388673374c9e52df, type: 3}
+      objectReference: {fileID: 590718984}
+    - target: {fileID: 4810074419592938944, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
+      propertyPath: _teleportManager
+      value: 
+      objectReference: {fileID: 590718984}
     - target: {fileID: 5473404710393463214, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
       propertyPath: m_Name
       value: PrefabInpit2
       objectReference: {fileID: 0}
-    - target: {fileID: 5718845787745984916, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7823892727557345951, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
-      propertyPath: m_PokeConfiguration.m_ConstantValue.m_InteractionDepthOffset
-      value: 0.045
-      objectReference: {fileID: 0}
-    - target: {fileID: 8473931647040224975, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
-      propertyPath: m_Name
-      value: Lastik Audio
-      objectReference: {fileID: 0}
-    - target: {fileID: 9120794666502294280, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
-      propertyPath: m_Name
-      value: Marker Audio
-      objectReference: {fileID: 0}
+    - target: {fileID: 7708294600594186181, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
+      propertyPath: _teleportManager
+      value: 
+      objectReference: {fileID: 590718984}
+    - target: {fileID: 8095715831097764327, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
+      propertyPath: _teleportManager
+      value: 
+      objectReference: {fileID: 590718984}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -506,6 +534,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8839c8c901c996e49b72e7fb93d98bf0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &590718984 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8240115363786278609, guid: 265ea9b0011f16343a05a6cd8f945610, type: 3}
+  m_PrefabInstance: {fileID: 590718982}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a48886c4bbe19048bcac4ff6bc55554, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1953177232
