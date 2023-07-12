@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -10,6 +11,7 @@ namespace _3Dprinter
         private List<GameObject> _gameObjects;
 
         private GameObject _curObj;
+        private int _index = 0;
 
         // Start is called before the first frame update
         void Start()
@@ -29,8 +31,9 @@ namespace _3Dprinter
 
         private GameObject GetObject()
         {
-            var random = new Unity.Mathematics.Random(435423423);
-            return _gameObjects[random.NextInt(0,_gameObjects.Count-1)];
+            _index++;
+            _index = (_index >= _gameObjects.Count) ? 0 : _index;
+            return _gameObjects[_index];
         }
     }
 }
