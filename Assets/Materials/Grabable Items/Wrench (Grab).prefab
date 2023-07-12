@@ -11,10 +11,11 @@ GameObject:
   - component: {fileID: 9095289768125503334}
   - component: {fileID: 1009944654219597183}
   - component: {fileID: 1047145821796879099}
+  - component: {fileID: 8076902129131267512}
   - component: {fileID: 6620077102535574169}
   - component: {fileID: 6395002450093268019}
   - component: {fileID: 4884327918659248095}
-  - component: {fileID: 8076902129131267512}
+  - component: {fileID: 8378081216823847782}
   m_Layer: 0
   m_Name: Wrench (Grab)
   m_TagString: Wrench
@@ -87,6 +88,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8076902129131267512
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7064488451286805499}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.0141316075, y: 0.012406705, z: 0.0020000793}
+  m_Center: {x: 0.00045910932, y: 0.02124189, z: 0.000000035256786}
 --- !u!65 &6620077102535574169
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -270,24 +292,17 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
---- !u!65 &8076902129131267512
-BoxCollider:
+--- !u!114 &8378081216823847782
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7064488451286805499}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.0141316075, y: 0.012406705, z: 0.0020000793}
-  m_Center: {x: 0.00045910932, y: 0.02124189, z: 0.000000035256786}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad14f3882434fb45bae33defbbbc3e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _particles: {fileID: 6998778621721017976, guid: ce6c46cdeac9e82458a481bee012c711, type: 3}
+  _compareTag: Cell
