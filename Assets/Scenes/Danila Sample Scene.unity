@@ -355,30 +355,10 @@ PrefabInstance:
       propertyPath: _teleportManager
       value: 
       objectReference: {fileID: 590718984}
-    - target: {fileID: 598302851728608585, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
-      propertyPath: _display
-      value: 
-      objectReference: {fileID: 613315922}
-    - target: {fileID: 697393682617632187, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
-      propertyPath: m_UseGravity
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 697393682617632187, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
-      propertyPath: m_IsKinematic
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1287622882477772998, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1897193471215376596, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
       propertyPath: _teleportManager
       value: 
       objectReference: {fileID: 590718984}
-    - target: {fileID: 1947814603025349804, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
-      propertyPath: m_InteractionLayers.m_Bits
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 1957468083686924437, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
       propertyPath: _teleportManager
       value: 
@@ -387,10 +367,6 @@ PrefabInstance:
       propertyPath: _teleportManager
       value: 
       objectReference: {fileID: 590718984}
-    - target: {fileID: 2567849109619258955, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
-      propertyPath: m_InteractionLayers.m_Bits
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 2885049098454039279, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
       propertyPath: _teleportManager
       value: 
@@ -411,26 +387,10 @@ PrefabInstance:
       propertyPath: _teleportManager
       value: 
       objectReference: {fileID: 590718984}
-    - target: {fileID: 3825313930265179236, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
-      propertyPath: _oneButton
+    - target: {fileID: 4070121029761030045, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
+      propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 738678617}
-    - target: {fileID: 3825313930265179236, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
-      propertyPath: _zeroButton
-      value: 
-      objectReference: {fileID: 1605040151}
-    - target: {fileID: 4035230694939196187, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
-      propertyPath: m_InteractionLayers.m_Bits
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 4587798600938943807, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
-      propertyPath: m_UseGravity
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4587798600938943807, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
-      propertyPath: m_IsKinematic
-      value: 0
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8300000, guid: 5fa5a0fcaadec234b9c3da4d3f3e3ec0, type: 3}
     - target: {fileID: 4629913523865484305, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -445,7 +405,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4629913523865484305, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.01
+      value: -0.36
       objectReference: {fileID: 0}
     - target: {fileID: 4629913523865484305, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
       propertyPath: m_LocalRotation.w
@@ -487,14 +447,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: PrefabInpit2
       objectReference: {fileID: 0}
+    - target: {fileID: 7616463928929647882, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.365
+      objectReference: {fileID: 0}
     - target: {fileID: 7708294600594186181, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
       propertyPath: _teleportManager
       value: 
       objectReference: {fileID: 590718984}
-    - target: {fileID: 8052845734254001123, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8095715831097764327, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
       propertyPath: _teleportManager
       value: 
@@ -593,39 +553,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0a48886c4bbe19048bcac4ff6bc55554, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &613315922 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3825313930265179236, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
-  m_PrefabInstance: {fileID: 529708869}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ada352766626b8045b50ed74b0ee8a08, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &738678617 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4035230694939196187, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
-  m_PrefabInstance: {fileID: 529708869}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a35f6cfbfba9b548aaa00d52cfe8a50, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1605040151 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7197750023091753002, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
-  m_PrefabInstance: {fileID: 529708869}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a35f6cfbfba9b548aaa00d52cfe8a50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1953177232
