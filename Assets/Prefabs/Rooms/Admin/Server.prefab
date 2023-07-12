@@ -1121,7 +1121,7 @@ GameObject:
   - component: {fileID: 5221618278846121630}
   m_Layer: 0
   m_Name: Server
-  m_TagString: Untagged
+  m_TagString: Cell
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1141,7 +1141,7 @@ Transform:
   - {fileID: 5385547081765841682}
   - {fileID: 3338446458096098541}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4078533289050479335
 MeshFilter:

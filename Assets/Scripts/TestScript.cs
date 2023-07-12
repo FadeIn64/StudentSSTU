@@ -7,8 +7,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class TestScript : MonoBehaviour
 {
-    private GameObject _particleSystem;
-    
+
     // Start is called before the first frame update
     void Start()
     {

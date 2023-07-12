@@ -443,6 +443,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PrefabInpit2
       objectReference: {fileID: 0}
+    - target: {fileID: 7616463928929647882, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.365
+      objectReference: {fileID: 0}
     - target: {fileID: 7708294600594186181, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
       propertyPath: _teleportManager
       value: 
