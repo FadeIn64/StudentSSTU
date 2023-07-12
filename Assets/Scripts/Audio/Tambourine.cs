@@ -30,13 +30,11 @@ namespace Audio
             if (magnitude > _velocityOffset)
             {
                 if (_audioSource.isPlaying) return;
-                print("BBBBBBBBBB");
-                _audioSource.Play();
+                _audioSource.UnPause();
             }
             else if(_audioSource.isPlaying)
             {
-                print("SSSSSSSSSS");
-                _audioSource.Stop();
+                _audioSource.Pause();
             }
 
             _prevPosition = _tr.position;

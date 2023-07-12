@@ -387,6 +387,10 @@ PrefabInstance:
       propertyPath: _teleportManager
       value: 
       objectReference: {fileID: 590718984}
+    - target: {fileID: 4070121029761030045, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 5fa5a0fcaadec234b9c3da4d3f3e3ec0, type: 3}
     - target: {fileID: 4629913523865484305, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
       propertyPath: m_RootOrder
       value: 2
