@@ -1,6 +1,4 @@
-using System;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 namespace _3Dprinter
@@ -12,6 +10,10 @@ namespace _3Dprinter
 
         private GameObject _curObj;
         private int _index = 0;
+
+        internal delegate void OnChangeObject();
+
+        internal event OnChangeObject OnChangeEvent; 
 
         // Start is called before the first frame update
         void Start()
@@ -26,6 +28,7 @@ namespace _3Dprinter
         {
             _curObj.SetActive(false);
             _curObj = GetObject();
+            OnChangeEvent?.Invoke();
             _curObj.SetActive(true);
         }
 
