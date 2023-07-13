@@ -7919,6 +7919,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small Table1
       objectReference: {fileID: 0}
+    - target: {fileID: 9201007359776338021, guid: 223c4efc4ba1c68428573184b8a698ac, type: 3}
+      propertyPath: m_Name
+      value: CinemaCamera
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
