@@ -355,6 +355,10 @@ PrefabInstance:
       propertyPath: _teleportManager
       value: 
       objectReference: {fileID: 590718984}
+    - target: {fileID: 916389797139659181, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
+      propertyPath: m_Name
+      value: Wall
+      objectReference: {fileID: 0}
     - target: {fileID: 1897193471215376596, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
       propertyPath: _teleportManager
       value: 
@@ -387,10 +391,6 @@ PrefabInstance:
       propertyPath: _teleportManager
       value: 
       objectReference: {fileID: 590718984}
-    - target: {fileID: 4070121029761030045, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 5fa5a0fcaadec234b9c3da4d3f3e3ec0, type: 3}
     - target: {fileID: 4629913523865484305, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -459,8 +459,12 @@ PrefabInstance:
       propertyPath: _teleportManager
       value: 
       objectReference: {fileID: 590718984}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedComponents:
+    - {fileID: 501736527122398116, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
+    - {fileID: 228619960875481405, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
+    m_RemovedGameObjects:
+    - {fileID: 2162619602185109146, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
+    - {fileID: 2195877252852516480, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49ddc678663f843419213dec8ef4f6a7, type: 3}
