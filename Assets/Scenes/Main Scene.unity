@@ -241,6 +241,10 @@ PrefabInstance:
       propertyPath: m_PlaneDistance
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 950852471545514788, guid: 64464de3484b92c478c098bdf352cb15, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 1654241962593745779, guid: 64464de3484b92c478c098bdf352cb15, type: 3}
       propertyPath: m_IsActive
       value: 0
