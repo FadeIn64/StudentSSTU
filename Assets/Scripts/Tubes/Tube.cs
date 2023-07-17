@@ -18,18 +18,23 @@ namespace Tubes
         private GameObject _stickerGameObject;
         private Transform _stickerTransform;
         private StartTransform _startTransform;
+        private Rigidbody _stickerRigidbody;
 
-        private delegate void OnTriggerSticker();
+        public delegate void OnTriggerSticker();
 
-        private event OnTriggerSticker OnTriggerStickerEvent;
+        public event OnTriggerSticker OnTriggerStickerEvent;
 
         private void Start()
         {
             _stickerGameObject = _stickerGrabInteractable.gameObject;
             _stickerGameObject.tag = "Sticker";
             _stickerTransform = _stickerGrabInteractable.transform;
-            _startTransform.position = transform.position;
-            _startTransform.rotation = transform.rotation;
+            _stickerRigidbody = _stickerGameObject.GetComponent<Rigidbody>();
+            _stickerRigidbody.isKinematic = true;
+            _startTransform.position = _stickerTransform.position;
+            _startTransform.rotation = _stickerTransform.rotation;
+            
+            _stickerGrabInteractable.selectExited.AddListener(ChangeKinematic);
             
             OnTriggerStickerEvent += TriggerSticker;
             
@@ -37,7 +42,7 @@ namespace Tubes
 
         private void OnTriggerEnter(Collider other)
         {
-            if (! other.CompareTag("Sticker"))
+            if (!other.CompareTag("Sticker"))
                 return;
             OnTriggerStickerEvent?.Invoke();
         }
@@ -46,6 +51,13 @@ namespace Tubes
         {
             _stickerGrabInteractable.enabled = false;
             _stickerTransform.SetPositionAndRotation(_startTransform.position, _startTransform.rotation);
+            _stickerRigidbody.isKinematic = true;
+            _stickerGrabInteractable.enabled = true;
+        }
+
+        private void ChangeKinematic(SelectExitEventArgs args)
+        {
+            _stickerRigidbody.isKinematic = false;
         }
 
         struct StartTransform
