@@ -13,6 +13,8 @@ TagManager:
   - Pen
   - Floor
   - Wall
+  - Partical
+  - Sticker
   layers:
   - Default
   - TransparentFX
